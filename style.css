@@ -510,6 +510,7 @@ h2 {
 
     .plants-section {
         padding-top: 55px;
+        margin-bottom: 40px;
     }
 
     .products-grid {
@@ -528,8 +529,8 @@ h2 {
         height: 200px;
     }
 
-    image.main {
-        width: 100%;
+    img.main {
+        width: 100% !important;
     }
 
 
