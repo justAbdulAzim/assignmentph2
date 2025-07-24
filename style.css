@@ -318,7 +318,9 @@ body {
 
 }
 
-.subscription-section .container {width: 70%;}
+.subscription-section .container {
+    width: 70%;
+}
 
 h2 {
     font-family: 'Noto Serif';
@@ -338,7 +340,7 @@ h2 {
     width: 70%;
     font-family: 'Inter';
     padding: 8px 20px;
-    
+
 }
 
 .submit-button {
@@ -349,4 +351,60 @@ h2 {
     font-size: 16px;
     cursor: pointer;
     font-family: 'Inter';
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 150px 0px;
+}
+
+.footer-left {
+    max-width: 340px;
+}
+
+.footer-left img {
+    width: 135px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    font-family: 'Inter';
+    color:rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.footer-center {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 200px));
+    gap: 35px 40px;
+}
+
+.footer-center a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Inter';
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.footer-center a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-right {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.footer-right img {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 50%;
 }
