@@ -105,19 +105,7 @@ body {
     max-width: 550px;
 }
 
-@media (max-width: 500px) {
-    .hero {
-        grid-template-columns: 1fr;
-    }
 
-    .hero-content {
-        order: 2;
-    }
-
-    .hero-image {
-        order: 1;
-    }
-}
 
 
 
@@ -205,9 +193,6 @@ body {
     width: 100%;
 }
 
-@media (max-width: 500px) {
-    grid-template-columns: repeat(2, 1fr);
-}
 
 
 
@@ -217,7 +202,7 @@ body {
     padding: 120px 0;
 }
 
-.section-title {
+.deals-section .section-title {
     font-size: 2.5rem;
     font-weight: 400;
     color: #333;
@@ -228,7 +213,7 @@ body {
     color: #ff6b35;
 }
 
-.section-description {
+.deals-section .section-description {
     font-size: 1rem;
     color: #999;
     max-width: 600px;
@@ -440,7 +425,7 @@ h2 {
 
 .content {
     flex: 1 1 300px;
-    padding-left:40px;
+    padding-left: 40px;
 }
 
 .content h2 {
@@ -464,8 +449,176 @@ h2 {
     color: rgba(0, 0, 0, 0.5);
 }
 
-@media (max-width: 768px) {
+
+
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 17px;
+    }
+
+    .header {
+        padding-top: 15px;
+        gap: 0;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .logo img {
+        width: 65px !important;
+    }
+
+    .section-title {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .cart {
+        justify-content: end;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .hero-image {
+        margin-bottom: 20px;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    .hero-content p {
+        font-size: 14px
+    }
+
+    ;
+
+    .hero-image {
+        order: 1;
+    }
+
+    .plants-section {
+        padding-top: 55px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .badge {
         display: none;
+    }
+
+    .section-description {
+        font-size: 14px;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+
+    image.main {
+        width: 100%;
+    }
+
+
+    .content {
+        padding-left: 0;
+    }
+
+    .content h2 {
+        font-size: 27px;
+        padding-top: 35px;
+    }
+
+    .content li {
+        font-size: 14px;
+    }
+
+    .deals-section .section-title {
+        font-size: 27px;
+    }
+
+    .deals-section {
+        padding-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .deals-section .section-description {
+        font-size: 14px;
+    }
+
+
+    .deals-grid {
+        display: block;
+        height: auto;
+    }
+
+    .deal-card {
+        max-width: 361px;
+        height: 184px;
+        margin: 15px auto;
+    }
+
+    .deal-content .deal-title {
+        font-size: 20px;
+    }
+
+    .deal-content a {
+        font-size: 16px;
+    }
+
+    .subscription-section {
+        min-height: 275px;
+    }
+
+    .subscription-section h2 {
+        font-size: 20px;
+    }
+
+    .subscription-section .container {
+        width: 90%;
+    }
+
+    .subscription-form .email-input {
+        font-size: 14px;
+    }
+
+    .subscription-form .submit-button {
+        padding: 15px 20px;
+        font-size: 14px;
+    }
+
+
+    .footer {
+        flex-direction: column;
+        margin: 45px auto;
+    }
+
+    .footer-left img {
+        width: 180px;
+    }
+
+    .footer-center {
+        grid-template-columns: repeat(1, minmax(100px, 200px));
+    }
+
+    .footer-left p {
+        font-size: 14px;
+    }
+
+    .footer-right {
+        margin-top: 25px;
     }
 }
