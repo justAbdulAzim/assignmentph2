@@ -204,6 +204,149 @@ body {
     letter-spacing: 0.5px;
     width: 100%;
 }
+
 @media (max-width: 500px) {
     grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+.deals-section {
+    margin: 0 auto;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title .highlight {
+    color: #ff6b35;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #999;
+    max-width: 600px;
+    margin: 0 auto 60px auto;
+    line-height: 1.6;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    height: 500px;
+    font-family: 'Noto Serif';
+}
+
+.deal-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.deal-card-1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('images/deal-bloom.png') center/cover;
+}
+
+.deal-card-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('images/deal-ana.png')center/cover;
+}
+
+.deal-card-3 {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    background: linear-gradient(rgba(0, 0, 0, 0.4)), url('images/deal-zabo.png') center/cover;
+}
+
+.deal-content {
+    color: white;
+    z-index: 2;
+    position: relative;
+}
+
+.deal-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.deal-card-3 .deal-title {
+    font-size: 2.2rem;
+}
+
+.deal-link {
+    color: white;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.deal-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* form */
+
+.subscription-section {
+    background: url(images/news-letter-bg.png) center/cover;
+    text-align: center;
+    width: 100%;
+    min-height: 533px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.subscription-section .container {width: 70%;}
+
+h2 {
+    font-family: 'Noto Serif';
+    color: white;
+    font-size: 50px;
+    margin-bottom: 23px;
+}
+
+.subscription-form {
+    display: flex;
+    justify-content: center;
+}
+
+.email-input {
+    border: none;
+    font-size: 16px;
+    width: 70%;
+    font-family: 'Inter';
+    padding: 8px 20px;
+    
+}
+
+.submit-button {
+    padding: 15px 50px;
+    background-color: #e95a08;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Inter';
 }
